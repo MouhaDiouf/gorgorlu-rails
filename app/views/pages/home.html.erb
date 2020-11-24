@@ -41,11 +41,11 @@
     <%= image_tag freelancer.avatar, class:"card-img", alt:'avatar' %>
     <% end %>
 <div class="freelancer-info card-body">
-<%= freelancer.nom %>
-    <%= freelancer.prenom %>
-    <p> <%= freelancer.email %> </p>
-        <p> <%= freelancer.pseudo %> </p>
-            <%= link_to 'Voir Profil', users_path(freelancer), class: "btn btn-primary"%>
+<p> <%= freelancer.prenom %> <%= freelancer.nom %></p>
+<p><%= freelancer.metier %></p>
+   
+            <%= link_to 'Voir Profil', user_path(freelancer), class: "btn btn-primary"%>
+
 
 </div>
     

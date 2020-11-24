@@ -1,2 +1,13 @@
-<h1>Users#show</h1>
-<p>Find me in app/views/users/show.html.erb</p>
+<h1>Détails pour <%= @user.prenom %></h1>
+
+<div class="user-details">
+<div class="user-image">
+<%= image_tag @user.avatar %>
+</div>
+<div class="user-details__content">
+    <p>Prenom: <%= @user.prenom%></p>
+    <p>Bio: <%= @user.bio %></p>
+    <p>Compétences: </p>
+    <%= link_to 'Envoyer message', new_personal_message_path(receiver_id: @user) %>
+</div>
+</div>
