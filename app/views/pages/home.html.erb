@@ -45,7 +45,7 @@
     <%= freelancer.prenom %>
     <p> <%= freelancer.email %> </p>
         <p> <%= freelancer.pseudo %> </p>
-            <a href="#" class="btn btn-primary">Voir profil</a>
+            <%= link_to 'Voir Profil', users_path(freelancer), class: "btn btn-primary"%>
 
 </div>
     

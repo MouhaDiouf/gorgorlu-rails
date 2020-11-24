@@ -10,7 +10,7 @@ class DeviseCreateUsers < ActiveRecord::Migration[6.0]
       t.string :metier, null: false, default: ""
       t.string :localite, null: false, default: ""
       t.string :telephone, null: false, default: ""
-      t.float :note, null: false, default: 0
+      t.float  :note, null: false, default: 0
       t.string :email,              null: false, default: ""
       t.string :encrypted_password, null: false, default: ""
 
