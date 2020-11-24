@@ -1,0 +1,22 @@
+.freelancers-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.freelancer {
+    margin: 10px;
+    width: 300px; 
+}
+.freelancer-image {
+    width: 300px;
+}
+.freelancer-image > img {
+    width: 100%;
+    object-fit: contain;
+}
+
+
+.freelancers-main {
+    text-align: center;
+}
